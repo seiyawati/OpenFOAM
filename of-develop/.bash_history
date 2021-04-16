@@ -30,3 +30,8 @@ mv laplacianFoam.C  laplacianFoam2.C
 wmake
 laplacianFoam2 -help
 exit
+ls -la
+cd pitzDaily/
+touch pitzDaily.foam
+ls
+exit
