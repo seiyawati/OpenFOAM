@@ -35,3 +35,20 @@ cd pitzDaily/
 touch pitzDaily.foam
 ls
 exit
+ls -la
+cd pitzDaily/
+blockMesh
+simpleFoam
+cd ..
+ls -la
+pwd
+cp -r $FOAM_TUTORIALS/incompressible/shallowWaterFoam/squareBump squareBump
+ls -la
+cd squareBump/
+ls
+blockMesh
+shallowWaterFoam
+touch squareBump.foam
+exit
+ls
+exit
