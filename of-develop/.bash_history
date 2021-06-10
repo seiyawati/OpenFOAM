@@ -52,3 +52,8 @@ touch squareBump.foam
 exit
 ls
 exit
+ls
+cd BackStep/
+paraFoam
+ls
+exit
