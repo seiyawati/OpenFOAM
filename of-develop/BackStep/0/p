@@ -1,0 +1,47 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    0;
+    object      p;
+}
+dimensions [0 2 -2 0 0 0 0];
+internalField uniform 0.0;
+boundaryField
+{
+    inlet
+    {
+        type zeroGradient;
+    }
+    face1
+    {
+        type zeroGradient;
+    }
+    face2
+    {
+        type zeroGradient;
+    }
+    face3
+    {
+        type zeroGradient;
+    }
+    step1
+    {
+        type zeroGradient;
+    }
+    step3
+    {
+        type zeroGradient;
+    }
+    outlet
+    {
+        type totalPressure;
+        p0 uniform 0;
+        value uniform 0;
+    }
+    step2
+    {
+        type zeroGradient;
+    }
+}
