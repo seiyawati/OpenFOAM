@@ -53,6 +53,31 @@ exit
 ls
 exit
 ls
+cd junctionModel/
+ls
+chmod 755 Allrun
+ls -la
+./Allrun
+ls
+cd system/
+grep boundry
+grep boundary *
+grep boundary*
+grep boundary
+ls
+grep boundary *
+grep boundary blockMeshDict 
+grep empty
+grep empty *
+cd ..
+grep empty *
+cd ..
+ls
+cd hoge/
+ls -la
+chmod 755 Allrun
+ls -la
+./Allrun 
 cd BackStep/
 paraFoam
 ls

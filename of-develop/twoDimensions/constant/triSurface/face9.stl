@@ -1,0 +1,16 @@
+solid face9
+facet normal -1 0 0
+outer loop
+vertex 0.5 0 0
+vertex 0.5 0 0.3
+vertex 0.5 0.001 0
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0.5 0.001 0
+vertex 0.5 0 0.3
+vertex 0.5 0.001 0.3
+endloop
+endfacet
+endsolid face9

@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    face1
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          48406;
+        startFace       240592;
+    }
+    face2
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          482;
+        startFace       288998;
+    }
+    face3
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          48400;
+        startFace       289480;
+    }
+    face4
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          219;
+        startFace       337880;
+    }
+    face5
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          42;
+        startFace       338099;
+    }
+    face6
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          132;
+        startFace       338141;
+    }
+    face7
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          218;
+        startFace       338273;
+    }
+    face9
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          133;
+        startFace       338491;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          174;
+        startFace       338624;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          174;
+        startFace       338798;
+    }
+)
+
+// ************************************************************************* //

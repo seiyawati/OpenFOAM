@@ -1,0 +1,55 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    0;
+    object      nut;
+}
+dimensions [0 2 -1 0 0 0 0];
+internalField uniform 0.001;
+boundaryField
+{
+    inlet
+    {
+        type calculated;
+        value uniform 0.001;
+    }
+    face1
+    {
+        type zeroGradient;
+    }
+    face2
+    {
+        type zeroGradient;
+    }
+    face3
+    {
+        type zeroGradient;
+    }
+    face4
+    {
+        type zeroGradient;
+    }
+    face5
+    {
+        type zeroGradient;
+    }
+    face6
+    {
+        type zeroGradient;
+    }
+    face7
+    {
+        type zeroGradient;
+    }
+    face9
+    {
+        type zeroGradient;
+    }
+    outlet
+    {
+        type calculated;
+        value uniform 0.001;
+    }
+}
