@@ -78,4 +78,7 @@ ls -la
 chmod 755 Allrun
 ls -la
 ./Allrun 
+cd BackStep/
+paraFoam
+ls
 exit

@@ -1,0 +1,119 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+face1.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face2.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face3.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+inlet.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+outlet.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+step1.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+step2.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+step3.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}

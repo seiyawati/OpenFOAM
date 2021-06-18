@@ -1,0 +1,104 @@
+#!/bin/sh
+cd ${0%/*} || exit 1
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+show_help() {
+    echo "Usage: Allrun [OPTIONS]"
+    echo "options:"
+    echo "  -m, --onlyMesh  make only meshes"
+    echo "  -h, --help      print the usage"
+    echo ""
+    exit 1
+}
+get_num_labels() ( set -f; set -- $1; echo $# )
+monitor() {
+    local solverPID=$1
+    local logFile=$2
+    
+    while [ ! -f $logFile ]; do
+        sleep 1
+    done
+    sleep 3
+    
+    # Note that the numLabels includes "#"
+    local labels
+    labels=$(grep -E '^#' $logFile | tail -1)
+    if [ "x$labels" = "x" ]; then
+        labels="# Step"
+    fi
+    local numLabels=$(get_num_labels "$labels")
+    local numColumn=$(tail -1 $logFile | awk '{ print NF}')
+    
+    local i=0
+    while [ "$numLabels" -le "$numColumn" ]; do
+        i=$(expr $i + 1)
+        labels="$labels data$i"
+        numLabels=$(get_num_labels "$labels")
+    done  
+    
+    local xAxisLabel=$(echo $labels | cut -d " " -f2)
+    labels=$(echo $labels | cut -d " " -f3-)
+    
+    local gnuplotFile=$(mktemp)
+    echo "set term x11 1 font \"helvetica,17\" linewidth 1.5 persist noraise" > $gnuplotFile
+    echo "set logscale y" >> $gnuplotFile  
+    echo "set title \"Residuals\"" >> $gnuplotFile  
+    echo "set xlabel \"$xAxisLabel\"" >> $gnuplotFile  
+    echo "plot \\" >> $gnuplotFile
+    local field
+    local line
+    i=1
+    for field in $labels; do
+        i=$(expr $i + 1)
+        line="\"$logFile\" using 1:${i} with lines title \"$field\""
+        if [ $i -lt $numColumn ]; then
+           line="$line, \\"
+        fi
+        echo $line >> $gnuplotFile
+    done
+    echo "pause 1" >> $gnuplotFile
+    echo "reread" >> $gnuplotFile
+    
+    touch $logFile
+    gnuplot $gnuplotFile &
+    local gnuplotPID=$!
+    
+    while ps -p $solverPID > /dev/null; do
+        sleep 1
+    done
+    
+    sleep 5
+    kill -9 $gnuplotPID
+    rm $gnuplotFile
+}
+optionOld=$OPTIND
+OPTIND=1
+onlyMesh=0
+while getopts "hm-:" opt; do
+    case "$opt" in
+    -)
+        case "${OPTARG}" in
+            help) show_help;;
+            onlyMesh) onlyMesh=true;;
+        esac ;;
+    m) onlyMesh=true;;
+    h) show_help;;
+    esac
+done
+shift $((OPTIND-1))
+OPTIND=$optionOld
+runApplication blockMesh
+runApplication surfaceFeatureExtract
+runApplication snappyHexMesh -overwrite
+if [ "$onlyMesh" = true ] ; then
+    exit 0
+fi
+residualsFile="postProcessing/residuals(U,p,k,epsilon)/0/residuals.dat"
+if [ -f $residualsFile ] ; then
+    rm -f $residualsFile
+fi
+if [ -n "$DISPLAY" ] && [ -x "$(command -v gnuplot)" ]; then
+    runApplication $(getApplication) &
+    monitor $! $residualsFile
+else
+    runApplication $(getApplication)
+fi
