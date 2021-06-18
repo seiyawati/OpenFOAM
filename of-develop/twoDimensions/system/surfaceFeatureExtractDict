@@ -1,0 +1,147 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+face1.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face2.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face3.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face4.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face5.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face6.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face7.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+face9.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+inlet.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+outlet.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}

@@ -1,0 +1,579 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-1ff648926f77
+Exec   : surfaceFeatureExtract
+Date   : Jun 18 2021
+Time   : 03:54:49
+Host   : "34ce503f1783"
+PID    : 235
+I/O    : uncollated
+Case   : /home/openfoam/hoge
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeatureExtractDict
+
+Surface            : "face1.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 6
+Vertices     : 8
+Bounding Box : (0 0 0) (1.1 0 0.5)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 8
+    feature edges  : 8
+    of which
+        region edges   : 8
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 8
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 8
+        non-feature        : 0
+    edges  : 8
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 8
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face1_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face1.eMesh"
+
+Surface            : "face2.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0 0 0.5) (1.1 0.001 0.5)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face2_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face2.eMesh"
+
+Surface            : "face3.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 6
+Vertices     : 8
+Bounding Box : (0 0.001 0) (1.1 0.001 0.5)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 8
+    feature edges  : 8
+    of which
+        region edges   : 8
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 8
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 8
+        non-feature        : 0
+    edges  : 8
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 8
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face3_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face3.eMesh"
+
+Surface            : "face4.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0 0 0.3) (0.5 0.001 0.3)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face4_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face4.eMesh"
+
+Surface            : "face5.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0.5 0 0) (0.6 0.001 0)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face5_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face5.eMesh"
+
+Surface            : "face6.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0.6 0 0) (0.6 0.001 0.3)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face6_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face6.eMesh"
+
+Surface            : "face7.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0.6 0 0.3) (1.1 0.001 0.3)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face7_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face7.eMesh"
+
+Surface            : "face9.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0.5 0 0) (0.5 0.001 0.3)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/face9_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/face9.eMesh"
+
+Surface            : "inlet.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (0 0 0.3) (0 0.001 0.5)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/inlet_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/inlet.eMesh"
+
+Surface            : "outlet.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 2
+Vertices     : 4
+Bounding Box : (1.1 0 0.3) (1.1 0.001 0.5)
+
+
+Constructing feature set from included angle 165
+Selecting edges purely based on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 4
+    of which
+        region edges   : 4
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+    points : 4
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 4
+        non-feature        : 0
+    edges  : 4
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 4
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet"
+Writing convex feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_convexFeaturePts.obj"
+Writing concave feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_externalEdges.obj"
+Writing internal edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_internalEdges.obj"
+Writing flat edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_flatEdges.obj"
+Writing open edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_openEdges.obj"
+Writing multiple edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_multipleEdges.obj"
+Writing region edges to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_regionEdges.obj"
+Writing edge directions to "/home/openfoam/hoge/constant/extendedFeatureEdgeMesh/outlet_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/openfoam/hoge/constant/triSurface/outlet.eMesh"
+
+ExecutionTime = 0.12 s  ClockTime = 2 s
+
+End
+

@@ -1,0 +1,19 @@
+# Wavefront OBJ file written 2021-06-18T03:54:50
+o face7_edgeMesh
+
+# points : 4
+# lines  : 4
+
+# <points count="4">
+v 0.6 0.001 0.3
+v 1.1 0 0.3
+v 0.6 0 0.3
+v 1.1 0.001 0.3
+# </points>
+
+# <edges count="4">
+l 2 3
+l 3 1
+l 1 4
+l 4 2
+# </edges>
